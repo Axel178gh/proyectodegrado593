@@ -8,6 +8,12 @@
 </head>
 
 <body>
+<!-- Pantalla de inicio -->
+<div id="splash">
+    <img src="imagen/img.png" alt="Logo EDA" class="logo-splash">
+    <h1>Trastornos de Conducta Alimentaria</h1>
+    <p>E.D.A. – Espacio de Diálogo Alimentario</p>
+</div>
 
     <header>
         <div class="contenedor-titulo-logo">
@@ -71,6 +77,14 @@
     <footer>
         <p>© 2026 | E.D.A. – Colegio Dolores Sucre</p>
     </footer>
+<script>
+    window.addEventListener("load", function () {
+        setTimeout(function () {
+            document.getElementById("splash").style.display = "none";
+        }, 4000); // tiempo total del splash
+    });
+</script>
 
 </body>
+
 </html>
