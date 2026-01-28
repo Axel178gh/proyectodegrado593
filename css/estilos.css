@@ -211,4 +211,64 @@ html {
 /* Evita que el menú tape el título al bajar */
 #Signos {
     scroll-margin-top: 100px;
+
+}/* Splash screen */
+#splash {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    animation: fadeOut 1s ease forwards;
+    animation-delay: 3s;
+}
+
+/* Logo animado */
+.logo-splash {
+    width: 120px;
+    margin-bottom: 20px;
+    animation: zoomIn 1.5s ease;
+}
+
+/* Texto */
+#splash h1 {
+    font-size: 26px;
+    margin: 10px 0;
+    animation: aparecer 2s ease;
+}
+
+#splash p {
+    font-size: 16px;
+    color: #555;
+    animation: aparecer 2.5s ease;
+}
+
+/* Animaciones */
+@keyframes zoomIn {
+    from {
+        transform: scale(0.6);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes aparecer {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
 }
