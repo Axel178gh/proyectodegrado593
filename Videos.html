@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Multimedia y Juegos | TCA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        html { scroll-behavior: smooth; }
+
+        .contenedor-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            padding: 20px 0;
+        }
+
+        .tarjeta-multimedia {
+            background: #ffffff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            text-align: center;
+            padding-bottom: 25px;
+        }
+
+        .tarjeta-multimedia:hover { transform: scale(1.02); }
+
+        .reproductor {
+            position: relative;
+            padding-bottom: 56.25%; 
+            height: 0;
+            overflow: hidden;
+            background-color: #000;
+        }
+
+        .reproductor iframe {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            border: none;
+        }
+
+        .info-tarjeta { padding: 15px; }
+
+        .boton-juego {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 12px 30px;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        #Juegos { scroll-margin-top: 100px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="contenedor-titulo-logo">
+            <img src="imagen/img3.jpg" alt="Logo Colegio Dolores Sucre" class="logo-colegio">
+            <div class="texto-titulo">
+                <h1>Material Audiovisual e Interactivo</h1>
+                <p class="subtitulo">Aprende y participa - Colegio Dolores Sucre</p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="barra-navegacion">
+        <a href="index.html">Inicio</a>
+        
+        <div class="desplegable">
+            <a href="tipos.html" class="enlace-menu">¿Qué son los T.C.A.?</a>
+            <div class="contenido-desplegable">
+                <a href="tipos.html#tipos-tca">Tipos Comunes de T.C.A.</a>
+            </div>
+        </div>
+
+        <div class="desplegable">
+            <a href="causas.html" class="enlace-menu">Causas y Factores</a>
+            <div class="contenido-desplegable">
+                <a href="causas.html#Signos">Signos de Alerta</a>
+            </div>
+        </div>
+        <a href="ayuda.html">Ayuda</a>
+<div class="desplegable">
+            <a href="Videos.html" class="boton-inicio" class="enlace-menu"><strong>Videos e Interactivos</strong></a>
+            <div class="contenido-desplegable">
+                <a href="#Juegos">Juegos interactivos</a>
+            </div>
+        </div>       
+         <a href="Creadores.html">Creadores</a>
+    </nav>
+
+
+    <section class="contenido">
+        <div class="texto-intro">
+            <p><strong>¿Prefieres ver a leer?</strong> Hemos seleccionado estos tres videos clave para que entiendas de forma rápida qué son los trastornos alimentarios y cómo afrontarlos.</p>
+        </div>
+
+        <div class="contenedor-grid">
+            <div class="tarjeta-multimedia" style="border-bottom: 5px solid #2e7d32;">
+                <div class="reproductor">
+                    <iframe src="https://www.youtube.com/embed/tDziA1KPfb8" allowfullscreen></iframe>
+                </div>
+                <div class="info-tarjeta"><h3>Trastornos alimenticios y sus causas</h3></div>
+            </div>
+
+            <div class="tarjeta-multimedia" style="border-bottom: 5px solid #2e7d32;">
+                <div class="reproductor">
+                    <iframe src="https://www.youtube.com/embed/KBCmtiQm8J4" allowfullscreen></iframe>
+                </div>
+                <div class="info-tarjeta"><h3>Trastornos de Conducta Alimentaria</h3></div>
+            </div>
+
+            <div class="tarjeta-multimedia" style="border-bottom: 5px solid #2e7d32;">
+                <div class="reproductor">
+                    <iframe src="https://www.youtube.com/embed/5lRWLnuiDKI?si=fRFxE5UPvacJP2IL" allowfullscreen></iframe>
+                </div>
+                <div class="info-tarjeta"><h3>Short sobre Trastornos de Conducta Alimentaria</h3></div>
+            </div>
+        </div>
+
+        <hr style="margin: 60px 0; border: 1px solid #eee;">
+
+        <div id="Juegos">
+            <h2 style="color: #2e7d32; text-align: center; border-bottom: 3px solid #FFD34E; padding-bottom: 10px;">
+                🎮 Juegos Interactivos
+            </h2>
+            <p style="text-align: center;">Pon a prueba tus conocimientos de una forma divertida.</p>
+
+            <div class="contenedor-grid">
+                
+                <div class="tarjeta-multimedia" style="border-bottom: 5px solid #1976d2;">
+                    <h3 style="color: #2e7d32; padding: 25px 15px 10px; font-weight: bold; margin: 0;"><strong>Sí o No: Pon a prueba tu mente sobre los T.C.A.</strong></h3>
+                    <div class="contenedor-juego" style="margin: 15px auto; width: 92%; border-radius: 10px; overflow: hidden; border: 1px solid #f0f0f0;">
+                        <iframe src="https://es.educaplay.com/juego/27546971-tca_verdades_y_mitos.html" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p style="padding: 10px 25px; color: #4e7d5a; font-size: 0.95rem;"><strong>¿Podrás identificar la verdad sobre los trastornos alimentarios?</strong></p>
+                    <a href="https://es.educaplay.com/recursos-educativos/27546971-tca_verdades_y_mitos.html" target="_blank" class="boton-juego" style="background-color: #f1c40f;">
+                        <span>⛶</span> Ver en Pantalla Completa
+                    </a>
+                </div>
+
+                <div class="tarjeta-multimedia" style="border-bottom: 5px solid #fbc02d;">
+                    <h3 style="color: #2e7d32; padding: 25px 15px 10px; font-weight: bold; margin: 0;"><strong>Sopa de Letras: Bienestar y Salud sobre T.C.A.</strong></h3>
+                    <div class="contenedor-juego" style="margin: 15px auto; width: 92%; border-radius: 10px; overflow: hidden; border: 1px solid #f0f0f0;">
+                        <iframe src="https://es.educaplay.com/juego/27547507-sopa_de_letras_bienestar_y_salud_mental.html" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p style="padding: 10px 25px; color: #4e7d5a; font-size: 0.95rem;"><strong>Encuentra conceptos clave del bienestar y la prevención.</strong></p>
+                    <a href="https://es.educaplay.com/recursos-educativos/27547507-sopa_de_letras_bienestar_y_salud_mental.html" target="_blank" class="boton-juego" style="background-color: #f1c40f;">
+                        <span>⛶</span> Ver en Pantalla Completa
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="cuadro-institucional" style="margin-top: 50px; background-color: #e8f5e9; padding: 20px; border-radius: 10px; text-align: center;">
+            <p><strong>Recuerda:</strong> El conocimiento es tu mejor herramienta para cuidar de ti y de tus compañeros.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 | E.D.A. – Colegio Dolores Sucre</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,214 @@
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #A8E6A3; /* Verde claro */
+    color: #2E7D32; /* Verde oscuro */
+    line-height: 1.6;
+}
+
+/* =========================
+   HEADER / BANNER
+========================= */
+header {
+    background-color: #2E7D32; /* Verde oscuro */
+    padding: 20px;
+}
+
+.contenedor-titulo-logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-colegio {
+    width: 80px;
+}
+
+.texto-titulo h1 {
+    color: #FFD84D; /* Amarillo */
+    font-size: 28px;
+}
+
+.subtitulo {
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+/* =========================
+   BARRA DE NAVEGACIÓN
+========================= */
+.barra-navegacion {
+    background-color: #FFD84D; /* Amarillo */
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.barra-navegacion a {
+    text-decoration: none;
+    color: #2E7D32;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.barra-navegacion a:hover {
+    background-color: #2E7D32;
+    color: #FFFFFF;
+}
+
+/* =========================
+   CONTENIDO PRINCIPAL
+========================= */
+.contenido {
+    background-color: #FFFFFF;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.contenido h2 {
+    color: #2E7D32;
+    margin-bottom: 15px;
+    border-bottom: 4px solid #FFD84D;
+    padding-bottom: 6px;
+}
+
+.contenido h3 {
+    margin-top: 20px;
+    color: #2E7D32;
+}
+
+.contenido p {
+    margin-bottom: 15px;
+}
+
+.contenido ul {
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+.contenido li {
+    margin-bottom: 8px;
+}
+
+/* =========================
+   IMÁGENES
+========================= */
+.contenido img {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 4px solid #FFD84D;
+}
+
+/* =========================
+   PIE DE PÁGINA
+========================= */
+footer {
+    background-color: #2E7D32;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+    .contenedor-titulo-logo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .texto-titulo h1 {
+        font-size: 22px;
+    }
+
+    .logo-colegio {
+        width: 70px;
+    }
+}
+/* Contenedor principal de la navegación */
+.barra-navegacion {
+    background-color: #FFD34E; /* El color amarillo de tu imagen */
+    display: flex;             /* Alinea los hijos en línea */
+    align-items: center;       /* Centra los elementos verticalmente */
+    justify-content: center;   /* Centra los elementos horizontalmente */
+    padding: 10px 0;
+    gap: 20px;                 /* Espacio uniforme entre botones */
+}
+
+/* Estilo para los enlaces normales */
+.barra-navegacion a {
+    text-decoration: none;
+    color: #1b7133;            /* Color verde de las letras */
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+/* Estilo específico para el botón de 'Inicio' (el que tiene fondo verde) */
+.boton-inicio {
+    background-color: #68913e; 
+    color: white !important;
+    border-radius: 8px;
+}
+
+/* Estructura del Desplegable para que no rompa la línea */
+.desplegable {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.contenido-desplegable {
+    display: none;
+    position: absolute;
+    top: 100%;                 /* Aparece justo debajo del botón */
+    left: 0;
+    background-color: white;
+    min-width: 180px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    z-index: 100;
+    border-radius: 4px;
+}
+
+.contenido-desplegable a {
+    color: #333 !important;
+    display: block;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.contenido-desplegable a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Mostrar al pasar el mouse */
+.desplegable:hover .contenido-desplegable {
+    display: block;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* Evita que el menú tape el título al bajar */
+#Signos {
+    scroll-margin-top: 100px;
+}

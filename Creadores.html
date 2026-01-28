@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Creadores | Proyecto TCA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        /* Estilos generales para la página de Creadores */
+        body { background-color: #f4f9f4; }
+        
+        .seccion-final { padding: 40px 20px; max-width: 1000px; margin: 0 auto; }
+
+        /* 1. Resumen del sitio web */
+        .resumen-sitio {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-left: 8px solid #2e7d32;
+            margin-bottom: 50px;
+            line-height: 1.6;
+        }
+
+        /* 2. Tarjetas de Creadores */
+        .contenedor-creadores {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .tarjeta-creador {
+            background: white;
+            padding: 25px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            border-bottom: 5px solid #FFD34E;
+        }
+
+        .foto-creador {
+            width: 180px;
+            height: 180px;
+            border-radius: 15px;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 3px solid #e8f5e9;
+        }
+
+        .info-creador h3 { color: #1b5e20; margin: 10px 0 5px; font-size: 1.4rem; }
+        .info-creador p { color: #555; margin: 4px 0; font-size: 1rem; }
+
+        /* 3. Cuadro de Recomendación y Agradecimiento */
+        .bloque-agradecimiento {
+            background: #e8f5e9;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            border: 2px dashed #2e7d32;
+        }
+
+        .cuadro-recomendacion {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 700px;
+            border-left: 5px solid #d32f2f;
+            color: #d32f2f;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        .boton-inicio-final {
+            background: #2e7d32;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            display: inline-block;
+            margin-top: 20px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .boton-inicio-final:hover { background: #1b5e20; transform: translateY(-3px); }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="contenedor-titulo-logo">
+            <img src="imagen/img3.jpg" alt="Logo Colegio Dolores Sucre" class="logo-colegio">
+            <div class="texto-titulo">
+                <h1>Créditos del Sitio Web</h1>
+                <p class="subtitulo">Conoce a los autores de este sitio</p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="barra-navegacion">
+        <a href="index.html">Inicio</a>
+        
+        <div class="desplegable">
+            <a href="tipos.html" class="enlace-menu">¿Qué son los T.C.A.?</a>
+            <div class="contenido-desplegable">
+                <a href="tipos.html#tipos-tca">Tipos Comunes de T.C.A.</a>
+            </div>
+        </div>
+
+        <div class="desplegable">
+            <a href="causas.html" class="enlace-menu">Causas y Factores</a>
+            <div class="contenido-desplegable">
+                <a href="causas.html#Signos">Signos de Alerta</a>
+            </div>
+        </div>
+        <a href="ayuda.html">Ayuda</a>
+<div class="desplegable">
+            <a href="Videos.html" class="enlace-menu">Videos e Interactivos</a>
+            <div class="contenido-desplegable">
+                <a href="#Juegos">Juegos interactivos</a>
+            </div>
+        </div>       
+         <a href="Creadores.html" class="boton-inicio"><strong>Creadores</strong></a>
+    </nav>
+
+
+    <main class="seccion-final">
+        
+        <div class="resumen-sitio">
+            <h2 style="color: #2e7d32; margin-top: 0;">🌐 Resumen del Sitio Web</h2>
+            <p>
+                Este portal educativo ha sido diseñado para brindar una guía completa sobre los <strong>Trastornos de la Conducta Alimentaria (T.C.A.)</strong>. A través de nuestras páginas, el usuario ha podido aprender sobre la anorexia, bulimia y otros trastornos, identificar señales de alerta, comprender los factores de riesgo y conocer los centros de ayuda disponibles en Guayaquil y el resto del país. Además, integramos recursos multimedia y juegos para facilitar el aprendizaje de nuestra comunidad en el <strong>Colegio Dolores Sucre</strong>.
+            </p>
+        </div>
+
+        <h2 style="text-align: center; color: #2e7d32; margin-bottom: 30px;">👥 Creadores del Sitio web</h2>
+        <div class="contenedor-creadores">
+            
+            <div class="tarjeta-creador">
+                <img src="imagen/img10.jpeg" alt="Foto Creador 1" class="foto-creador">
+                <div class="info-creador">
+                    <h3>Castillo Danna </h3>
+                    <p><strong>Curso:</strong> 3ro de Bachillerato</p>
+                    <p><strong>Paralelo:</strong> "D"</p>
+                </div>
+            </div>
+            <div class="tarjeta-creador">
+                <img src="imagen/img11.jpeg" alt="Foto Creador 2" class="foto-creador">
+                <div class="info-creador">
+                    <h3>Vera Maycol</h3>
+                    <p><strong>Curso:</strong> 3ro de Bachillerato</p>
+                    <p><strong>Paralelo:</strong> "D"</p>
+                </div>
+            </div>
+            <div class="tarjeta-creador">
+                <img src="imagen/img12.jpeg" alt="Foto Creador 3" class="foto-creador">
+                <div class="info-creador">
+                    <h3>Quiñones Milady</h3>
+                    <p><strong>Curso:</strong> 3ro de Bachillerato</p>
+                    <p><strong>Paralelo:</strong> "D"</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bloque-agradecimiento">
+            <h3 style="color: #1b5e20;">❤️ Recomendación de Salud</h3>
+            <div class="cuadro-recomendacion">
+                ⚠️ RECOMENDACIÓN: "Recuerda que los trastornos alimentarios son problemas de salud serios, no caprichos. Si tú o alguien que conoces está luchando con su imagen corporal o su alimentación, busca ayuda profesional de inmediato. Tu bienestar emocional es tan importante como el físico."
+            </div>
+
+            <h3 style="margin-top: 30px;">🙌 ¡Muchas gracias por visitarnos!</h3>
+            <p>Gracias por dedicar tiempo a informarte en nuestro sitio web. Esperamos que esta herramienta sea de utilidad para ti y para tus compañeros del Colegio Dolores Sucre.</p>
+            
+            <a href="index.html" class="boton-inicio-final">Volver a la Página Principal</a>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2026 | Equipo E.D.A. – Guayaquil, Ecuador</p>
+    </footer>
+
+</body>
+</html>
